@@ -1,0 +1,17 @@
+# OS junk
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Regenerable render artifacts (recreated by render.sh / the build scripts)
+build/redesign/render/
+build/redesign/source_render/
+build/redesign/deck_render/
+build/redesign/survey/
+build/redesign/qa/
+build/redesign/*.pdf
+
+# Local backup zips
+*-backup-*.zip

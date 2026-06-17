@@ -1,0 +1,1085 @@
+[
+ {
+  "n": 1,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 2,
+  "severity": "major",
+  "fidelity_ok": false,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The three headshots render at good quality, but there are NO name/role/degree captions anywhere on the visible slide.",
+   "The record's own note admits 'Role/name captions cannot render in image_grid; supply them as caption labels in the build' — and indeed they did not render. All of this real content lives only in the note (speaker-notes equivalent).",
+   "Slide also renders in the smaller framed image_grid layout with the reduced A-A-A diamond corner motif rather than the full deck chrome."
+  ],
+  "dropped_text": [
+   "Jyothika Raju",
+   "Arjun Balaji",
+   "Monish Raman",
+   "Co-founder & Program Lead.",
+   "MPA at Columbia University.",
+   "Creative Director.",
+   "MSCE at New York University"
+  ],
+  "fix": "Move the names, roles, and degrees out of the note and into visible caption labels under each headshot, e.g. add a parallel 'captions' array to the record: ['Arjun Balaji — Co-founder & Program Lead, MPA Columbia' (image12.jpg), 'Jyothika Raju — Co-founder & Program Lead, MPA Columbia' (image13.png), 'Monish Raman — Creative Director, MSCE NYU' (image24.jpg)]. If image_grid cannot render captions, switch this slide to an archetype that renders per-image caption labels.",
+  "image_issue": ""
+ },
+ {
+  "n": 3,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 4,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "Slide is hidden (hidden=true) and new_png is null, so there is no rendered image to inspect. Record bullets faithfully mirror all eight agenda lines from source_text; nothing to flag without a render."
+  ],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 5,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The seven source cohort images (image2/23/5/3/9/21/4.png) are intentionally dropped in converting to a 'statement' slide; the substantive intro text is fully present, so this is acceptable."
+  ],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 6,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "Vertical-tab control character before 'Your name and organisation' was correctly cleaned. All three card lines plus the 'Skepticism is welcome here...' line are present and readable."
+  ],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 7,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "fix": ""
+ },
+ {
+  "n": 8,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "issues": [
+   "Both images are dated reaction-meme GIFs (Star Trek 'HELLO, COMPUTER?' and Hocus Pocus) — low quality / off-brand, matching the record's own 'ugly-image — flag for reshoot' note.",
+   "Right meme's caption text is cropped: 'MACHINE LEARNING' renders as 'ACHINE LEARNIN' (leading M and trailing G cut off by the image frame).",
+   "Renders in the smaller framed image_grid layout with reduced corner motif."
+  ],
+  "dropped_text": [],
+  "fix": "Replace both dated meme GIFs (image29.gif, image8.gif) with on-brand, higher-resolution visuals for the 'reality check' point; if the existing GIFs are kept, re-crop the right image so the full 'MACHINE LEARNING' text is visible instead of cut off.",
+  "image_issue": "Two dated/low-res reaction-meme GIFs; right image has its overlaid 'MACHINE LEARNING' text cropped to 'ACHINE LEARNIN'. Flag for reshoot/replace."
+ },
+ {
+  "n": 9,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 10,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "Screenshot is letterboxed inside navy margins rather than full-bleed; the 'cheese not sticking to pizza' query and the circled glue line are still readable, so the joke lands."
+  ],
+  "dropped_text": [],
+  "image_issue": "Dated meme-style Google AI Overview screenshot already flagged ugly-image for reshoot. Body text is small but the key circled line is legible. Replace with a cleaner, larger crop on reshoot.",
+  "constraint_violation": "",
+  "fix": "On reshoot, crop tighter to the query + circled 'add about 1/8 cup of non-toxic glue' line and scale to full-bleed so it fills the frame instead of sitting in navy letterbox bars."
+ },
+ {
+  "n": 11,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "tiny",
+  "issues": [
+   "The nuclear-war AI Overview screenshot is rendered small and centered with large navy margins; its dense body text is effectively unreadable on a projector. Only the 'societal benefits of nuclear war' query line and the dark UI read at a glance."
+  ],
+  "dropped_text": [],
+  "image_issue": "image14.png is an inherently dense/dark full-page Google AI Overview screenshot with tiny body text; placed small it is illegible. Already flagged ugly-image for reshoot.",
+  "constraint_violation": "",
+  "fix": "On reshoot, crop to just the search query + the most damning AI claim and scale to full-bleed; do not show the whole page at small size, since the body text is unreadable."
+ },
+ {
+  "n": 12,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "image_full slide carries no body text by design; the millionaire/₹9 paragraph from source lives on the paired statement slide 13, so no real content is lost."
+  ],
+  "dropped_text": [],
+  "image_issue": "image26.png renders correctly (YouTube 'Become irreplaceable at your job at ₹9' grifter screenshot with garbled 'I ON / MINUTE MEI?' overlay). It is a cluttered, low-quality ad-style capture, already flagged ugly-image for reshoot.",
+  "constraint_violation": "",
+  "fix": "Keep as the visual lead-in to slide 13; on reshoot, swap for a cleaner, less compression-artifacted hustle/grift screenshot."
+ },
+ {
+  "n": 13,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 14,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The 'What  learns' / 'Asks  ' bullets keep the double-space gap from source where a bold inline label was dropped; faithful to source but slightly awkward. Image (dosa stall with 'PREDICTIVE AI FORECAST SALES: 375' monitor) is a strong, on-theme match for Predictive AI."
+  ],
+  "dropped_text": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 15,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "All Generative bullets are present and readable, but the accompanying image (image16.png = the Claude wordmark logo) does not illustrate the named example. The bullet says Google's 'Nano Banana' turns a sentence into an image, yet the visual is the Claude logo, creating a content/image mismatch."
+  ],
+  "dropped_text": [],
+  "image_issue": "image16.png is a plain Claude logo on white, which neither shows a generated image nor matches the 'Nano Banana' example cited in the bullet.",
+  "constraint_violation": "",
+  "fix": "Replace image16.png with an actual generative-AI output example (ideally a Nano Banana / text-to-image result matching the bullet), or change the bullet's example to match the Claude image; current pairing is mismatched."
+ },
+ {
+  "n": 16,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 17,
+  "severity": "major",
+  "fidelity_ok": false,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [
+   "We're a first cohort, so we're learning together but the destination is real, working tools you own and run."
+  ],
+  "issues": [
+   "The closing kicker sentence ('We're a first cohort, so we're learning together but the destination is real, working tools you own and run.') is present in the record's 'kicker' field but is NOT rendered on the slide. The r_bullets archetype (archetypes.py:281-301) never reads the 'kicker' field — only r_numbered does (line 273). So this substantive source line is silently dropped and is not in speaker notes either. There is a large empty area below the 5 bullets where it should appear."
+  ],
+  "fix": "The 'bullets' archetype does not render the 'kicker' field. Either move the closing sentence into a field r_bullets actually renders (e.g. add it as a kicker render branch in r_bullets, or place it as an 'intro'/standalone caption), or switch this slide to an archetype that renders kicker. The sentence 'We're a first cohort, so we're learning together but the destination is real, working tools you own and run.' must be visible on-slide.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 18,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 19,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 20,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Ghost number '01' renders cleanly on one line; all FOCUS body and 4 GOALS bullets are present and readable."
+  ],
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 21,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "All real content (FOCUS body, 4 GOALS bullets) is present and readable. However the decorative ghost number '02' wraps onto two lines: the '0' sits upper-right and the '2' drops to the lower-right, where it crowds toward the bottom-right corner motif. It looks like a broken/split numeral rather than a clean '02'. The 180pt ghost is too wide for its 3.2in box."
+  ],
+  "fix": "Reduce ghost_size (or widen the ghost textbox at archetypes.py:215) so two-digit ghost numbers like '02' fit on a single line and don't wrap down into the corner-motif zone.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 22,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "All real content (FOCUS body, 4 GOALS bullets) present and readable. Decorative ghost number '03' wraps: '0' upper-right, '3' drops to lower-right near the bottom-right corner motif, looking like a split/broken numeral."
+  ],
+  "fix": "Same as slide 21: reduce ghost_size or widen the ghost textbox so '03' renders on one line instead of wrapping toward the corner motif.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 23,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "All real content (FOCUS body, 4 GOALS bullets) present and readable. Decorative ghost number '04' wraps: '0' upper-right, '4' drops to lower-right near the bottom-right corner motif, looking like a split/broken numeral."
+  ],
+  "fix": "Same as slide 21: reduce ghost_size or widen the ghost textbox so '04' renders on one line.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 24,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "All real content (FOCUS body, 3 GOALS bullets) present and readable. Decorative ghost number '05' wraps: '0' upper-right, large '5' drops to lower-right and its lower edge overlaps/touches the bottom-right corner motif, looking like a split/broken numeral."
+  ],
+  "fix": "Same as slide 21: reduce ghost_size or widen the ghost textbox so '05' renders on one line and the lower digit stops colliding with the corner motif.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 25,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 26,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 27,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 28,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 29,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 30,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "Row body text is a touch small relative to the leads, but fully legible on a projector."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 31,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 32,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 33,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 34,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 35,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 36,
+  "severity": "major",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": true,
+  "legibility": "cramped",
+  "issues": [
+   "The exercise card overflows its box: the 4th card line 'Can you get AI to speak in your org's voice? Reflect your mission?' and 'Show off if you know more than prompting already!' spill out below the card's bottom border.",
+   "The spilled card text collides with and overlaps the arrow/question line 'There is no single \"right\" prompt. Type anything. Revise as many times as you want.' — 'Show off if you know more than prompting already!' is rendered directly on top of 'many times as you want', making both lines unreadable."
+  ],
+  "fix": "The card holds too much for its box. Shorten/trim the four card items so they fit, or enlarge the card box and push the question line lower. At minimum move the 'Show off if you know more...' line and ensure the question callout no longer overlaps the card text. Consider dropping the 4th card item ('Can you get AI to speak in your org's voice?...') into the body or reducing font size so the card does not overrun."
+ },
+ {
+  "n": 37,
+  "severity": "major",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": true,
+  "legibility": "cramped",
+  "issues": [
+   "The 5th and final card line 'How will you measure the success of your impact?' overruns the bottom border of the card box — the box's bottom edge cuts through the text rather than enclosing it.",
+   "The card is sized for ~4 lines but contains 5, so the last item collides with the card border."
+  ],
+  "fix": "Enlarge the card box height (or shrink the card font) so all five card items, including 'How will you measure the success of your impact?', sit fully inside the box with padding below the last line. The question callout below has room, so the box can be extended downward."
+ },
+ {
+  "n": 38,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The 'question' field duplicates the title: 'Reflect on that first attempt' appears both as the slide title and again as the arrow callout at the bottom, which is redundant and looks like a placeholder."
+  ],
+  "fix": "Remove the redundant 'question' value (currently 'Reflect on that first attempt', a copy of the title) or replace it with a genuine prompt. The original slide has no separate closing line, so the question field can simply be dropped."
+ },
+ {
+  "n": 39,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 40,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 41,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 42,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 43,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 44,
+  "severity": "major",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": true,
+  "legibility": "good",
+  "issues": [
+   "Title 'Defining AI problems and Solution Types' wraps to two lines and the gold accent rule underneath collides with / strikes through the word 'Types' on the second line, making it look struck-out."
+  ],
+  "fix": "Shorten the title to a single line (e.g. 'Defining AI problems & solution types') or move the gold accent rule below the wrapped title so it does not strike through the second line."
+ },
+ {
+  "n": 45,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 46,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 47,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 48,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 49,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 50,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Image grid uses 5 low-quality, dated, cluttered AI-content screenshots (AI writing-tool ad, blended pet photos, teddy-bear photo, 'AI influencer step-by-step guide' thumbnail, AI music thumbnail). Several have text baked in that is cut off at the thumbnail edges (e.g. 'w to create an AI influencer / 026: step-by-step guide'). They look like random web screenshots, not curated 'Create & Communicate' examples.",
+   "Thumbnails are small and visually inconsistent (different aspect ratios, garish colors) for a projector."
+  ],
+  "image_issue": "Five dated/cluttered AI-content web screenshots of inconsistent quality and aspect ratio, with text cropped at edges; the record's own note flags them for reshoot.",
+  "fix": "Reshoot/replace the 5 thumbnails with clean, on-brand 'Create & Communicate' examples (e.g. a drafted newsletter, a volunteer training doc, a simple programme webpage) at consistent aspect ratio; ensure no baked-in text is cropped."
+ },
+ {
+  "n": 51,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "First Examples bullet wraps to two lines ('...survey data about your / programmes') but is fully readable; minor only, no action required."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 52,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Left image is a product UI screenshot where an 'Add files / Add to project / Add from Google Drive / Add from GitHub / Skills / Connectors / Plugins' dropdown menu overlaps and partly obscures a panel behind it; the underlying panel text is cut off ('From Dr...'), giving a cluttered, half-cropped look.",
+   "Right image (Claude conversation, 'Afternoon, Jenni') is clear and on-topic."
+  ],
+  "image_issue": "Left screenshot is cluttered with an overlapping dropdown menu and a cropped background panel; record note already flags dated screenshots for reshoot.",
+  "fix": "Reshoot the left 'Learn & Decide' screenshot so the open dropdown does not overlap/crop another panel, or replace with a cleaner single-panel screenshot; keep the right conversation image."
+ },
+ {
+  "n": 53,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 54,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 55,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "image_full uses image62.png, which is an EMPTY laptop-bezel mockup with a blank white screen (confirmed by reading the source asset). On the dark slide background the blank screen renders as a black/empty void, so the entire slide shows an empty laptop displaying nothing. It conveys zero information and looks broken.",
+   "Original slide 55 also had image41.png, which almost certainly contained the actual screenshot meant to sit inside this bezel; that content image was dropped, leaving only the empty frame."
+  ],
+  "image_issue": "image62.png is a content-free empty laptop mockup; with no screenshot composited inside, the full-slide image is effectively blank and appears broken.",
+  "fix": "Replace image62.png with the real Projects screenshot (image41.png from the original slide), or composite the intended screenshot into the laptop screen so it is not an empty blank frame. Do not ship a full-slide empty laptop."
+ },
+ {
+  "n": 56,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Clear, legible 'Create a project' screenshot, well-placed and on-topic. Contains org label 'TechNYC' but that is not a banned term (no Mohit/Microsoft/MSR)."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 57,
+  "severity": "major",
+  "fidelity_ok": false,
+  "dropped_text": [
+   "Writing strong grant/donor outreach applications and organizational content"
+  ],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "The laptop mockup screen is completely BLANK — image62.png failed to render inside the laptop frame. The slide shows only an empty dark laptop screen with no content.",
+  "issues": [
+   "image62.png did not render inside the laptop frame — screen is blank/empty",
+   "The record body line 'Writing strong grant/donor outreach applications and organizational content' does not appear anywhere on the slide"
+  ],
+  "fix": "Image is broken/empty inside the laptop frame — fix image62.png embedding so it actually displays, or switch arch away from a laptop mockup. Also surface the body line 'Writing strong grant/donor outreach applications and organizational content' as a visible caption rather than leaving the slide content-less."
+ },
+ {
+  "n": 58,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 59,
+  "severity": "major",
+  "fidelity_ok": false,
+  "dropped_text": [
+   "Step 2. Write a system prompt telling Claude to only answer questions using that document.",
+   "Example: \"You are a helpful assistant for [org name]. Answer questions only using the materials provided. If the answer isn't in the document, say so.\"",
+   "Step 3. Try asking it: \"What does our organisation do?\" · \"Who are our beneficiaries?\" · \"What did we achieve last year?\""
+  ],
+  "overflow": true,
+  "legibility": "cramped",
+  "image_issue": "",
+  "issues": [
+   "The exercise card massively overflows its box: Step 1, Step 2, Step 3 and the laptop visual all overlap. The card body collides with the 'The goal' question text at the bottom, producing layered, unreadable, overlapping text.",
+   "Step 2 (system prompt + example) and Step 3 (the three sample questions) are cut off / buried under overlapping text and are not readable.",
+   "Title also crowds the card; the whole slide is broken layout."
+  ],
+  "fix": "The exercise card has far too much text for the box — split this into two slides (Steps 1-2 on one, Step 3 + 'The goal' question on the next), or drop the laptop visual to free width and significantly reduce card body font so all of Step 1/2/3, the system-prompt example, and the goal question are fully visible without overlap."
+ },
+ {
+  "n": 60,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 61,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [
+   "Title reads 'Lunch - See you at !' with no time — but this is faithful to the source, which also had a blank time placeholder. Worth filling in the actual lunch return time before presenting."
+  ],
+  "fix": "Optional: insert the actual return time into the title (source left it blank as 'See you at !'); not a render defect."
+ },
+ {
+  "n": 62,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 63,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [
+   "The ghost '04' is rendered split into a faint '0' top-right and a faint '4' bottom-right rather than as a single '04' watermark. It reads oddly but does not collide with or obscure any content text."
+  ],
+  "fix": "Optional polish: render the ghost '04' as a single watermark numeral instead of splitting it into a top '0' and bottom '4'. All required content is present and readable."
+ },
+ {
+  "n": 64,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "dropped_text": [],
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 65,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "fix": ""
+ },
+ {
+  "n": 66,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Reference screenshot (image54.png) on the left is small and dark, so its embedded text is hard to read, but it is decorative context not source content. All four substantive bullets are present and readable on the right."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 67,
+  "severity": "major",
+  "fidelity_ok": false,
+  "overflow": true,
+  "legibility": "cramped",
+  "dropped_text": [
+   "How would you want to look at it (graphs, filters, sorting by district or programme)?",
+   "Example: \"Can you look at our beneficiary data and make an interactive dashboard I can open in my browser, with a map by district and a breakdown by programme type?\"",
+   "If you don't have data handy: Use your organisation's publicly available annual report numbers, or ask Claude to generate sample data that looks like yours so you can test the interface first."
+  ],
+  "issues": [
+   "The exercise 'card' box only contains the first bullet; the remaining card items overflow downward, spill out of the card, run off the bottom edge of the slide, and collide with the footer/page-number area.",
+   "The 'Ask Claude to show you that data the way you actually want to see it.' line is double-printed and overlaps the gold arrow 'question' line, producing illegible overlapping/colliding text.",
+   "'Which numbers matter most to...' is the last partially visible line; subsequent content is cut off below the slide edge."
+  ],
+  "fix": "Card has far too much content for the exercise layout. Split into two exercise slides, OR drastically shorten the card: keep only 'Drag a data file you already use into the chat...', the three short prompting questions as a tight list, and move the long Example sentence and the 'If you don't have data handy' fallback into speaker notes or onto slide 2. Also remove the redundant 'question' field (it duplicates a card line and causes the overlapping collision)."
+ },
+ {
+  "n": 68,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Full-bleed dashboard image; original slide had no body text, so nothing to drop."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 69,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "cramped",
+  "dropped_text": [],
+  "issues": [
+   "Title 'Claude Code — when chatting isn't enough' wraps to two lines and the second line ('enough') collides with the gold accent rule, which crosses straight through the word like a strikethrough — reads as a rendering defect.",
+   "The wrapped second title line also sits very close to the subtitle below it."
+  ],
+  "fix": "Shorten the statement title so it fits on one line (e.g. 'Claude Code — when chat isn't enough') OR increase the title box width / reduce title font size so it stays single-line, and ensure the gold accent rule is positioned clear of (not through) the title text."
+ },
+ {
+  "n": 70,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Full-bleed pixel-art 'CLAUDE CODE' image; original slide had no body text."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 71,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Both columns complete; all four bullets per side present and readable. Note the source 'It talks  you type', 'Best for  thinking', etc. lost their em-dash/colon separator (double space only) — faithful to the provided record but slightly awkward; cosmetic, not a fidelity failure."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 72,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "image_issue": "",
+  "issues": [
+   "Full-bleed Claude Code product UI screenshot (image56.png) is appropriate, well-placed, and good quality. Visible UI text ('Opus 4.7', 'Opus 4.8', 'Arjun', 'Lecture_Notes_export') contains no Mohit/Microsoft/MSR constraint violations."
+  ],
+  "fix": ""
+ },
+ {
+  "n": 73,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "Full-bleed dark UI screenshot is crisp and well-placed under the GETTING STARTED WITH CLAUDE CODE eyebrow. Note: the screenshot UI is branded 'Codex' (not Claude Code), which is slightly off-message for a 'Getting started with Claude Code' section, but it is an illustrative app shot with no source text to violate. Acceptable to ship; flag for awareness.",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 74,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 75,
+  "severity": "major",
+  "fidelity_ok": false,
+  "overflow": true,
+  "legibility": "tiny",
+  "dropped_text": [
+   "Use it in the browser (can't access your computer)",
+   "Use it on your computer with low permissions (Don't approve anything - just leave)",
+   "Use it on your computer with medium permissions (Review every approval)",
+   "Use it on your computer with lots of permissions (Approve most things)"
+  ],
+  "issues": [
+   "Severe text overlap: every bar's label is longer than the bar height allows, so the wrapped lines collide with the label of the bar below it. From bar 2 down, text from adjacent bars is stacked on top of each other and is completely unreadable (e.g. 'Use it in the browser' overlaps 'low permissions' which overlaps 'medium' etc.).",
+   "The 'navy' YOLO! bar was moved to the bottom of the list, but in the source 'YOLO!' sits near the top (right after the browser option) as the low-caution end label. The spectrum order is scrambled and the intended low-to-high caution gradient is lost.",
+   "The green bar's caption 'Live dangerously!' sits centered and disconnected from its label, while the 'Live dangerously!' source line belongs to the high-permissions/YOLO end, not mid-list."
+  ],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": "Do not use the 'bars' architecture for these long descriptive labels. Either (a) switch to a vertical list / spectrum-row layout with one full-width row per option so each long label gets its own line without wrapping into the next bar, or (b) split the long labels into a short bold lead (e.g. 'Browser only', 'Low permissions', 'Medium permissions', 'Lots of permissions') with the parenthetical guidance as a small desc beneath, and give each bar enough vertical height for two wrapped lines. Also fix ordering to a true low-to-high caution gradient (Don't use it -> Browser only -> Low -> Medium -> Lots/YOLO) and attach 'Live dangerously!' to the highest-permission/YOLO bar."
+ },
+ {
+  "n": 76,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 77,
+  "severity": "major",
+  "fidelity_ok": false,
+  "overflow": true,
+  "legibility": "cramped",
+  "dropped_text": [
+   "Score each volunteer on how many roles they have around mentorship / advising",
+   "…"
+  ],
+  "issues": [
+   "Card content overflows the bottom of the slide. The 'STEPS:' bullets ('Score each volunteer on their technology skills', 'Score each volunteer on how many roles they have around mentorship / advising') run off the bottom edge of the slide and are cut off mid-line.",
+   "The question line ('→ Create a visualization of this list of scored candidates...') is rendered in body text that collides and interleaves with the bold card bullets ('Score each volunteer on their technology skills' overlaps 'I can run in my browser. Let me sort and filter...'). Two text blocks are layered on top of each other and unreadable.",
+   "The footer (IMPACTAI FOUNDRY · BANGALORE 2026) is overrun by the bullet text."
+  ],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": "The card holds too much text for the exercise layout. Shrink the card body font and/or shorten the prompt: keep the 'ROLE AND GOAL' sentence and the STEPS header, but render the two step bullets compactly so they fit above the footer. Move the long '→ Create a visualization...' question out of the overlapping zone (e.g. give it its own dedicated band below the card, not layered over the bullets), or trim it. Ensure nothing extends past the card box or below the footer line."
+ },
+ {
+  "n": 78,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "Dark dashboard screenshot ('Decoded Futures' volunteer assessment) is sharp, well-framed, and clearly legible at projector scale. No source text to reconcile. Good.",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 79,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 80,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "constraint_violation": "",
+  "fix": ""
+ },
+ {
+  "n": 81,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Source had only 'CONNECTORS!!'; new body adds 'Claude can now use your browser.' which is fine. The connector/browser screenshot is small, low-res and cluttered (tiny overlapping UI windows, hard to read) and the record itself flags 'ugly-image — flag for reshoot'."
+  ],
+  "image_issue": "Browser/Claude-connector screenshot is low-res and visually cluttered with tiny overlapping window UI; flagged for reshoot in the record.",
+  "fix": "Replace image66.png with a cleaner, higher-resolution connector screenshot (per the existing reshoot flag), or simplify to a single clean product shot.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 82,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 83,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "The question line renders a doubled arrow: '→ → Fill in the blanks to frame your pain point.' The template prepends an arrow bullet AND the record's 'question' string already starts with '→', producing two arrows."
+  ],
+  "image_issue": "",
+  "fix": "Remove the leading '→ ' from the record's 'question' value (just 'Fill in the blanks to frame your pain point.') so only the template's single arrow shows.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 84,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Same doubled-arrow glitch: question renders '→ → 3 Min Share Out:' because the record's 'question' string starts with '→' and the template adds another arrow. Also '3 Min Share Out:' is the source lead-in header but is placed below the card; content is all present so acceptable, but the double arrow looks like an error."
+  ],
+  "image_issue": "",
+  "fix": "Remove the leading '→ ' from the record's 'question' value (just '3 Min Share Out:') so only one arrow renders.",
+  "constraint_violation": ""
+ },
+ {
+  "n": 85,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 86,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 87,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "QR code (image70.png) renders cleanly on the right; title fully present. Original split title 'Before you go, give us two more minutes' is correctly joined."
+  ],
+  "image_issue": "",
+  "fix": "",
+  "constraint_violation": ""
+ },
+ {
+  "n": 88,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [],
+  "image_issue": "",
+  "fix": "",
+  "constraint_violation": ""
+ }
+]
