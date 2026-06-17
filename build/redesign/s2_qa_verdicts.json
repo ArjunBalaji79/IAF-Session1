@@ -1,0 +1,286 @@
+[
+ {
+  "n": 1,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 2,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 3,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "cramped",
+  "issues": [
+   "Time labels in the numbered-column do not fit: '10:35' breaks to '10:3' + '5' on the next line, and '12:30' breaks to '12:3' + '0'. The wrapped digits collide with the following row ('5' overlaps the 11:35 row; '0' overlaps the kicker line).",
+   "The kicker 'Breaks at 10:20 and lunch at 12:00.' sits directly under the broken '12:30 / Close and Next Steps' row and visually collides with the overflowing '0'."
+  ],
+  "fix": "The 'numbered' archetype's num column is too narrow for 4-5 character time strings. Widen the num column (or reduce num font size) so '10:35' and '12:30' fit on one line; and add vertical spacing before the kicker so it does not collide with the last row."
+ },
+ {
+  "n": 4,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 5,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "issues": [
+   "The decorative ghost '02' watermark sits behind the 3rd and 4th Goals bullets ('Define inputs, constraints, and stakeholders' and 'Explicitly describe...'). Text remains readable but the overlap slightly reduces contrast on those lines."
+  ],
+  "fix": "Nudge the ghost '02' watermark lower/right or lighten it further so it does not sit behind the Goals bullet text."
+ },
+ {
+  "n": 6,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 7,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 8,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 9,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 10,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 11,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 12,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 13,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "Caption was correctly genericized, but the screenshot image itself leaks the source brand throughout."
+  ],
+  "dropped_text": [],
+  "image_issue": "The image25.png screenshot prominently displays 'DECODED FUTURES' logos (twice), the headline 'Bridging AI and the Social Sector', body copy 'Decoded Futures connects the social sector with cutting-edge AI technologies — empowering nonprofits in New York City...', and a 'decodedfutures.nyc' URL in the prompt box. The screenshot is a live capture of the un-rebranded Decoded Futures website.",
+  "constraint_violation": "Leftover 'Decoded Futures' branding (logos, name, social-sector tagline) and a 'decodedfutures.nyc' URL appear inside the embedded screenshot image — these should have been re-branded to ImpactAI Foundry or replaced with a brand-neutral screenshot.",
+  "fix": "Replace image25.png with a screenshot whose target website is brand-neutral or shows the ImpactAI Foundry site instead of decodedfutures.nyc; ensure no 'Decoded Futures' logo/name/URL appears in the captured page. Alternatively add a TODO note flagging the screenshot for reshoot with a generic URL."
+ },
+ {
+  "n": 14,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [],
+  "dropped_text": []
+ },
+ {
+  "n": 15,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 16,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 17,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "legibility": "tiny",
+  "issues": [
+   "Caption text is very small and faint at projector scale, though source text is just chrome (‹#›)."
+  ],
+  "fix": "Bump caption font size / contrast slightly for the bottom caption strip."
+ },
+ {
+  "n": 18,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "dropped_text": [
+   "These are nodes too",
+   "This is a node"
+  ],
+  "issues": [
+   "Source had three annotation labels; only 'This is a workflow' survives as eyebrow. The 'node' callouts that pointed at boxes are gone, but the caption explains node/flow concept."
+  ],
+  "fix": "Optionally add the 'This is a node' / 'These are nodes too' callouts as small labels, or confirm they are intentionally folded into the caption."
+ },
+ {
+  "n": 19,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "image_issue": "Synthetic tweet mock (Alton Syn / @WorkflowWhisper) — fabricated but no DF/technyc/typeform leak; on-topic and readable."
+ },
+ {
+  "n": 20,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 21,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "cramped",
+  "issues": [
+   "All five flow boxes (Trigger/Actor/Inputs/Action/Success) and sub-text render fully including '(this is optional!)'; sub-text is small but readable on projector."
+  ]
+ },
+ {
+  "n": 23,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 25,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 26,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 27,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 28,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 29,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 31,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The large faded '01' ghost numeral sits behind the right-column bullets (ACTOR/INPUT lines), creating slight visual competition. Text stays readable but the overlap is a touch distracting.",
+   "Title was lightly altered from source 'These are your prompt sections!' framing to 'maps perfectly to how you design your AI to run that step!' — intentional per merge note, content preserved as the right-column label."
+  ],
+  "fix": "Lower the ghost numeral opacity further or shift it down/right so it clears the ACTOR and INPUT bullet text in the right column."
+ },
+ {
+  "n": 32,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 33,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 34,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 35,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 36,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 37,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 38,
+  "severity": "ok",
+  "fidelity_ok": true
+ },
+ {
+  "n": 39,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": []
+ },
+ {
+  "n": 40,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": []
+ },
+ {
+  "n": 41,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": []
+ }
+]

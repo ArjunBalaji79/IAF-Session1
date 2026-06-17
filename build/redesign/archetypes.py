@@ -24,6 +24,7 @@ from theme_indic import (
 
 MEDIA = "assets/media"
 SPICE = RGBColor(0x9E, 0x6B, 0x33)
+GHOST = RGBColor(0xEF, 0xE7, 0xD2)   # faint watermark numeral (lighter than PAPER)
 
 import json as _json
 try:
@@ -232,7 +233,7 @@ def r_two_col(slide, rec):
         tb, tf = textbox(slide, CONTENT_R - 3.2, 2.95, 3.2, 2.0)
         p = para(tf, first=True, align=PP_ALIGN.RIGHT)
         run(p, rec["ghost"], font=SERIF, size=rec.get("ghost_size", 150),
-            color=PAPER, bold=True)
+            color=GHOST, bold=True)
     y = _title_block(slide, rec, title_size=rec.get("title_size", 32))
     cy = y + 0.15
     L = rec["left"]; R = rec["right"]
@@ -274,13 +275,22 @@ def r_numbered(slide, rec):
     rowh = min(rec.get("rowh", 1.12), avail / n)
     yy = y + 0.08
     body_size = rec.get("body_size", 13.5)
+    # adaptive num column: widen + shrink for long labels (e.g. times "10:35")
+    maxlen = max((len(str(r.get("num", ""))) for r in rows), default=2)
+    if maxlen <= 2:
+        num_sz, num_w = 26, 0.85
+    elif maxlen <= 4:
+        num_sz, num_w = 21, 1.25
+    else:
+        num_sz, num_w = 18, 1.5
+    lead_x = MARGIN_L + num_w + 0.22
     for i, row in enumerate(rows):
         if i > 0:
             rect(slide, MARGIN_L, yy - 0.09, CONTENT_W, 0.012, LINE)
-        tb, tf = textbox(slide, MARGIN_L, yy - 0.02, 0.95, 0.8)
+        tb, tf = textbox(slide, MARGIN_L, yy - 0.02, num_w, 0.8)
         p = para(tf, first=True)
-        run(p, row.get("num", f"{i+1:02d}"), font=SERIF, size=26, color=GOLD_DK, bold=True)
-        tb, tf = textbox(slide, MARGIN_L + 1.05, yy, CONTENT_W - 1.05, rowh)
+        run(p, row.get("num", f"{i+1:02d}"), font=SERIF, size=num_sz, color=GOLD_DK, bold=True)
+        tb, tf = textbox(slide, lead_x, yy, CONTENT_R - lead_x, rowh)
         p = para(tf, first=True, after=3)
         run(p, row.get("lead", ""), font=SERIF, size=rec.get("lead_size", 17), color=NAVY, bold=True)
         if row.get("body"):
@@ -448,12 +458,56 @@ def r_image_full(slide, rec):
         _eyebrow(slide, rec["eyebrow"], x=bx + 0.05, y=0.18,
                  color=GOLD if dark else GOLD_DK)
     if rec.get("caption"):
-        tb, tf = textbox(slide, bx, PAGE_H - 0.6, bw, 0.4)
-        p = para(tf, first=True, align=PP_ALIGN.CENTER)
-        run(p, rec["caption"], font=SERIF, size=13,
-            color=CREAM_DIM if dark else GOLDM, italic=True)
+        tb, tf = textbox(slide, bx, PAGE_H - 0.66, bw, 0.46)
+        p = para(tf, first=True, align=PP_ALIGN.CENTER, line=1.15)
+        run(p, rec["caption"], font=SERIF, size=14.5,
+            color=CREAM_TXT if dark else INK, italic=True)
     # full-bleed images stay clean (no corner motif over the screenshot)
     corners(slide, dark=dark, **_corner_kw(rec, default="none", drop_dark=True))
+
+
+def r_flow(slide, rec):
+    """Horizontal node/workflow diagram: connected labelled stage boxes
+    (e.g. Trigger → Inputs → Instructions → Model → Output)."""
+    bg(slide, CREAM)
+    y = _title_block(slide, rec, title_size=rec.get("title_size", 30))
+    steps = rec["steps"]
+    n = len(steps)
+    palette = [NAVY, TERRA, SPICE, GOLD, GREEN, NAVY]
+    txt_for = [CREAM_TXT, CREAM_TXT, CREAM_TXT, NAVY, CREAM_TXT, CREAM_TXT]
+    arrow = 0.42
+    avail_h = (PAGE_H - MARGIN_B - 0.35) - (y + 0.1)
+    bw = (CONTENT_W - arrow * (n - 1)) / n
+    bh = min(rec.get("box_h", 1.7), avail_h - (0.8 if rec.get("caption") else 0))
+    cy = y + 0.1 + (avail_h - bh) / 2
+    lab_sz = 16 if n <= 4 else (14 if n <= 5 else 12.5)
+    sub_sz = 11.5 if n <= 5 else 10.5
+    x = MARGIN_L
+    for i, step in enumerate(steps):
+        fill = palette[i % len(palette)]
+        tc = txt_for[i % len(txt_for)]
+        rect(slide, x, cy, bw, bh, fill)
+        label = step.get("label", "") if isinstance(step, dict) else str(step)
+        sub = step.get("sub", "") if isinstance(step, dict) else ""
+        tb, tf = textbox(slide, x + 0.12, cy + 0.12, bw - 0.24, bh - 0.24,
+                         anchor=MSO_ANCHOR.MIDDLE)
+        p = para(tf, first=True, align=PP_ALIGN.CENTER, line=1.04)
+        run(p, label, font=SERIF, size=lab_sz, color=tc, bold=True)
+        if sub:
+            p = para(tf, align=PP_ALIGN.CENTER, before=3, line=1.06)
+            run(p, sub, font=SERIF, size=sub_sz, color=tc)
+        if i < n - 1:
+            ax = x + bw
+            tb, tf = textbox(slide, ax, cy, arrow, bh, anchor=MSO_ANCHOR.MIDDLE)
+            p = para(tf, first=True, align=PP_ALIGN.CENTER)
+            run(p, "→", font=SERIF, size=20, color=GOLD_DK, bold=True)
+        x += bw + arrow
+    if rec.get("caption"):
+        tb, tf = textbox(slide, MARGIN_L, cy + bh + 0.22, CONTENT_W, 0.7)
+        p = para(tf, first=True, line=1.2)
+        run(p, rec["caption"], font=SERIF, size=14, color=INK, italic=True)
+    _maybe_footer(slide, rec)
+    corners(slide, **_corner_kw(rec, default="tl_tr"))
 
 
 def r_team(slide, rec):
@@ -549,6 +603,7 @@ RENDERERS = {
     "image_full": r_image_full,
     "image_grid": r_image_grid,
     "team": r_team,
+    "flow": r_flow,
 }
 
 

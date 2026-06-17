@@ -10,7 +10,8 @@ FOOTER_ARCH = {"two_col", "comparison", "numbered", "bullets", "bars",
 NO_FOOTER = {"cover", "divider", "statement", "quote", "image_full"}
 
 
-def build(records_path="deck_records.json", out="IAF-Session1-Redesigned.pptx"):
+def build(records_path="deck_records.json", out="IAF-Session1-Redesigned.pptx",
+          hide_srcs=("4",)):
     ensure_assets()
     records = json.load(open(records_path))
     if isinstance(records, dict):
@@ -40,10 +41,9 @@ def build(records_path="deck_records.json", out="IAF-Session1-Redesigned.pptx"):
         note = rec.get("note")
         if note:
             slide.notes_slide.notes_text_frame.text = note
-        # preserve hidden status of source slide 4
-        if str(rec.get("src", "")).rstrip("ab") == "4" and arch != "cover":
-            if str(rec.get("src")) == "4":
-                slide._element.set("show", "0")
+        # preserve hidden status of designated source slides
+        if str(rec.get("src", "")) in hide_srcs:
+            slide._element.set("show", "0")
 
     prs.save(out)
     print(f"saved {out}  ·  {len(prs.slides._sldIdLst)} slides  ·  {page} numbered")
