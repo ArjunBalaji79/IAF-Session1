@@ -19,6 +19,12 @@ build/redesign/s2_flowtest.pptx
 build/redesign/s2_qa-*.png
 build/redesign/s2_sheet-*.png
 build/redesign/s2_final-*.png
+build/redesign/s4_source_render/
+build/redesign/s4_deck_render/
+build/redesign/s4_*.png
+build/redesign/s4_qa-*.png
+build/redesign/s4_sheet-*.png
+build/redesign/s4_final-*.png
 
 # Local backup zips
 *-backup-*.zip

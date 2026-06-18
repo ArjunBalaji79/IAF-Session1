@@ -157,9 +157,14 @@ def r_cover(slide, rec):
             for seg in parts:
                 run(p, seg.get("t", ""), font=SERIF, size=13.5,
                     color=_col(seg.get("c", "gold"), GOLDM), bold=True, spc=3.0)
+    ctitle = rec.get("title", "")
+    csize = rec.get("title_size", 60)
+    # shrink to keep the cover title on one clean line (floor 40pt)
+    while csize > 40 and est_lines(ctitle, csize, PAGE_W - 1.4) > 1:
+        csize -= 2
     tb, tf = textbox(slide, 0.6, 2.84, PAGE_W - 1.2, 1.5)
     p = para(tf, first=True, align=PP_ALIGN.CENTER, line=1.0)
-    run(p, rec.get("title", ""), font=SERIF, size=rec.get("title_size", 60),
+    run(p, ctitle, font=SERIF, size=csize,
         color=CREAM_TXT if rec.get("dark") else NAVY, bold=True)
     rule(slide, cx - 0.45, 4.30, 0.9, GOLD, weight=3.0)
     if rec.get("subtitle"):

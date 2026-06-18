@@ -1,0 +1,863 @@
+[
+ {
+  "src": "1",
+  "arch": "cover",
+  "eyebrow": "IMPACTAI FOUNDRY · SESSION 4",
+  "title": "Upskilling Your AI",
+  "subtitle": "Customize your AI with connectors and skills, then build your prototype.",
+  "meta": [
+   {
+    "label": "Session",
+    "value": "04"
+   },
+   {
+    "label": "Date",
+    "value": "May 2026"
+   }
+  ]
+ },
+ {
+  "src": "2",
+  "arch": "numbered",
+  "eyebrow": "Agenda",
+  "title": "Today's session",
+  "rows": [
+   {
+    "num": "1:00",
+    "lead": "Session 3 Review",
+    "body": ""
+   },
+   {
+    "num": "1:15",
+    "lead": "Customize Your AI: Connectors",
+    "body": ""
+   },
+   {
+    "num": "2:00",
+    "lead": "Break",
+    "body": ""
+   },
+   {
+    "num": "2:15",
+    "lead": "Customize Your AI: Skills",
+    "body": ""
+   },
+   {
+    "num": "2:45",
+    "lead": "Build Your Prototype",
+    "body": ""
+   }
+  ],
+  "kicker": "4:30 — Share and Next Steps"
+ },
+ {
+  "src": "3",
+  "arch": "bars",
+  "eyebrow": "Learning Path",
+  "title": "Where we are",
+  "bars": [
+   {
+    "num": "01",
+    "name": "Discover",
+    "desc": "",
+    "color": "navy"
+   },
+   {
+    "num": "02",
+    "name": "Define",
+    "desc": "",
+    "color": "terra"
+   },
+   {
+    "num": "03",
+    "name": "Design",
+    "desc": "",
+    "color": "spice"
+   },
+   {
+    "num": "04",
+    "name": "Refine",
+    "desc": "",
+    "color": "gold"
+   },
+   {
+    "num": "05",
+    "name": "Deliver",
+    "desc": "",
+    "color": "green"
+   }
+  ]
+ },
+ {
+  "src": "4",
+  "arch": "two_col",
+  "eyebrow": "Learning Path · 03 Design",
+  "title": "Design",
+  "ghost": "03",
+  "left": {
+   "label": "Focus",
+   "body": "Building and testing the AI Prototype"
+  },
+  "right": {
+   "label": "Goals",
+   "bullets": [
+    "Build a reusable AI prototype aligned to the workflow",
+    "Apply structured prompting and context-setting",
+    "Test the prototype against real examples",
+    "Compare outputs to defined success criteria and refine for reliability"
+   ]
+  }
+ },
+ {
+  "src": "5",
+  "arch": "exercise",
+  "eyebrow": "Pair and Share · 15 min",
+  "title": "Pair and Share",
+  "card": [
+   "Stand up, find someone you don't know, and share the AI project you're working on."
+  ],
+  "question": "What's one new thing you learned about your workflows since our last session?",
+  "visual": "none"
+ },
+ {
+  "src": "6",
+  "arch": "statement",
+  "eyebrow": "Demo Day",
+  "title": "Tuesday, June 2nd: 4:00-6:30 — 101 Lawrence Way, St Cajetan's",
+  "subtitle": "Celebration with 5-minute AI Solution Demos on how you're enhancing impact and workflows"
+ },
+ {
+  "src": "7",
+  "arch": "divider",
+  "eyebrow": "Recap",
+  "title": "Reviewing Session 3",
+  "subtitle": "",
+  "dark": true
+ },
+ {
+  "src": "8",
+  "arch": "bullets",
+  "eyebrow": "The four questions",
+  "title": "Answer these before you deploy",
+  "intro": "Answer these questions before you deploy and you’re ahead of 99% of social sector tech.",
+  "bullets": [
+   "What does success look like - for everyone?",
+   "How will we know if it’s failing?",
+   "Who can raise an issue, and what happens?",
+   "Who can change it or turn it off?"
+  ]
+ },
+ {
+  "src": "9",
+  "arch": "comparison",
+  "eyebrow": "The tradeoffs you're likely making",
+  "title": "These are tough — there’s no right answer",
+  "left": {
+   "label": "On one side",
+   "bullets": [
+    "Speed",
+    "Serving more people",
+    "Staff time saved",
+    "Consistency"
+   ]
+  },
+  "right": {
+   "label": "On the other",
+   "bullets": [
+    "Accuracy",
+    "Serving fewer people better",
+    "User experience",
+    "Flexibility"
+   ]
+  },
+  "note": "These are tough! There’s no right answer, just what your organization cares about more."
+ },
+ {
+  "src": "10",
+  "arch": "bullets",
+  "eyebrow": "The nonprofit superpower",
+  "title": "What if your constituents could…",
+  "intro": "For-profits rarely let customers change the product. But you serve your community. You have flexibility they don't!",
+  "bullets": [
+   "Opt out?",
+   "Raise an issue?",
+   "Override the AI?"
+  ]
+ },
+ {
+  "src": "11",
+  "arch": "divider",
+  "eyebrow": "Enhancing your AI",
+  "title": "Adding the right tools for the job",
+  "dark": true
+ },
+ {
+  "src": "14",
+  "arch": "flow",
+  "eyebrow": "Trapped in the chat",
+  "title": "Up until now, almost all interaction with Claude has been in the chat",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": "You, opening a chat"
+   },
+   {
+    "label": "Actor",
+    "sub": "You, typing the prompt"
+   },
+   {
+    "label": "Input",
+    "sub": "Whatever you can drag into Claude"
+   },
+   {
+    "label": "Steps",
+    "sub": "Claude can only do whatever it can do out of the box"
+   },
+   {
+    "label": "Success",
+    "sub": "A response in the chat window"
+   }
+  ],
+  "caption": "Invoking Session 2, that means the chat is the trigger, the actor, the input, and the output all at once.",
+  "note": "Merged the 'Trapped in the chat' progressive-reveal build (slides 12–14) into one record using the fullest slide (14). Trigger/Actor subs inferred from the node-anatomy layout where source text was unlabeled."
+ },
+ {
+  "src": "18",
+  "arch": "flow",
+  "eyebrow": "Trapped in the chat",
+  "title": "But what about everything outside the chat?",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": "You start the chat manually"
+   },
+   {
+    "label": "Actor",
+    "sub": "You, in the chat"
+   },
+   {
+    "label": "Input",
+    "sub": "Connecting to your own data?"
+   },
+   {
+    "label": "Steps",
+    "sub": "Teaching Claude to do something your way consistently?"
+   },
+   {
+    "label": "Success",
+    "sub": "Putting results in your systems?"
+   }
+  ],
+  "caption": "Up until now, almost all interaction with Claude has been in the chat: whatever you can drag in, whatever it can do out of the box, output that stays in the chat. Merged from the 'Trapped in the Chat' build series (slides 15-18)."
+ },
+ {
+  "src": "19",
+  "arch": "divider",
+  "eyebrow": "ImpactAI Foundry",
+  "title": "Upskilling Claude: Revisiting the tool bench",
+  "dark": true
+ },
+ {
+  "src": "21",
+  "arch": "image_full",
+  "eyebrow": "Getting data into Claude",
+  "image": "image22.png",
+  "caption": "Connectors let Claude read and write to the tools you already use - found under Customize Claude. Merged from the 'Getting Data Into Claude' build series (slides 20-21).",
+  "dark": false
+ },
+ {
+  "src": "23",
+  "arch": "image_text",
+  "eyebrow": "Getting Data Into Claude",
+  "title": "Connect Claude to your tools",
+  "image": "image24.png",
+  "image_side": "right",
+  "bullets": [
+   "You can connect to tools.",
+   "These become data Claude can use as input / context!",
+   "This will also allow Claude to create outputs, with your permission!",
+   "Note: This will allow Claude to see data you share with it…"
+  ],
+  "note": "Merged the 'Getting Data Into Claude' build (slides 22–23) into one record using the fuller slide 23. Slide 22 was the partial reveal (connectors screenshot only) and was skipped."
+ },
+ {
+  "src": "24",
+  "arch": "image_text",
+  "eyebrow": "Getting Data Into Claude",
+  "title": "…but you have control over that!",
+  "image": "image33.png",
+  "image_side": "right",
+  "body": "Tool permissions let you choose when Claude is allowed to use each tool — always allow, ask each time, or require approval."
+ },
+ {
+  "src": "25",
+  "arch": "numbered",
+  "eyebrow": "Giving Claude tools: Slack",
+  "title": "Connect Claude to Slack to read the latest ImpactAI Foundry messages!",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Add Slack in your Connectors"
+   },
+   {
+    "num": "02",
+    "lead": "Ask Claude for a summary of the cohort 6 conversation"
+   },
+   {
+    "num": "03",
+    "lead": "Ask for anything else you might want to know!"
+   }
+  ]
+ },
+ {
+  "src": "26",
+  "arch": "image_full",
+  "eyebrow": "Giving Claude tools: Slack",
+  "image": "image56.png",
+  "caption": "Claude reads the cohort 6 Slack channel and returns a summary of recent activity — confirming the channel, loading the messages, then writing it up.",
+  "dark": true
+ },
+ {
+  "src": "28",
+  "arch": "flow",
+  "eyebrow": "Trapped in the chat",
+  "title": "But what about everything beyond the chat?",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": "What kicks the work off"
+   },
+   {
+    "label": "Actor",
+    "sub": "Who or what runs it"
+   },
+   {
+    "label": "Input",
+    "sub": "Connectors connect to your data sources ✅"
+   },
+   {
+    "label": "Steps",
+    "sub": "Teaching Claude to do something your way consistently?"
+   },
+   {
+    "label": "Success",
+    "sub": "Putting results in your systems?"
+   }
+  ],
+  "caption": "Merged the 'Trapped in the chat' build (slides 27–28) into one record using the fuller slide 28, which reveals the Input answer (connectors). Slide 27 was the partial reveal and was skipped."
+ },
+ {
+  "src": "29",
+  "arch": "image_text",
+  "eyebrow": "Connectors",
+  "title": "Getting Data Out of Claude",
+  "body": "Of course connectors work the same way in reverse. “Can you send the Slack summary to Jenni Warren in my DMs?” Safety first!",
+  "image": "image50.png",
+  "image_side": "right",
+  "note": "Slack-send screenshot; body keeps verbatim teaching lines plus the example prompt and the 'Safety first!' callout."
+ },
+ {
+  "src": "31",
+  "arch": "flow",
+  "eyebrow": "Trapped in the chat",
+  "title": "But what about:",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": ""
+   },
+   {
+    "label": "Actor",
+    "sub": ""
+   },
+   {
+    "label": "Input",
+    "sub": "Connectors connect to your data sources ✅"
+   },
+   {
+    "label": "Steps",
+    "sub": "Teaching Claude to do something your way consistently?"
+   },
+   {
+    "label": "Success",
+    "sub": "Putting results in your systems? ✅ Connectors connect to your data sources"
+   }
+  ],
+  "caption": "Merged the 'TRAPPED IN THE CHAT' progressive-reveal build (slides 30–31) into one record using the fullest slide (31). Earlier partial duplicate (slide 30) skipped.",
+  "note": "Node-anatomy reveal of the Trigger/Actor/Input/Steps/Success spectrum. Collapsed slides 30+31."
+ },
+ {
+  "src": "32",
+  "arch": "divider",
+  "eyebrow": "",
+  "title": "Break",
+  "subtitle": "15 min",
+  "dark": true,
+  "note": "Break interstitial (image27.jpg full-bleed kilim/loom photo); rendered as a dark section divider."
+ },
+ {
+  "src": "33",
+  "arch": "flow",
+  "eyebrow": "Skills",
+  "title": "Skills: Teaching Claude Some New Tricks",
+  "steps": [
+   {
+    "label": "Jake’s grant writing Claude project",
+    "sub": ""
+   },
+   {
+    "label": "Jenni’s case study publishing Claude project",
+    "sub": ""
+   },
+   {
+    "label": "Brenda’s one-off blog post",
+    "sub": ""
+   },
+   {
+    "label": "ImpactAI Foundry branding skill",
+    "sub": ""
+   }
+  ],
+  "caption": "Skills are actions your Claude can take any time you or anyone calls it.",
+  "note": "Three separate Claude projects all converge on one shared skill. Rebranded the diagram's 'Decoded Futures branding skill' box to 'ImpactAI Foundry branding skill'."
+ },
+ {
+  "src": "34",
+  "arch": "bullets",
+  "eyebrow": "Skills",
+  "title": "Skills: Teaching Claude Some New Tricks",
+  "intro": "Why use skills? From Anthropic themselves:",
+  "bullets": [
+   "Improvement in Claude’s performance of specific tasks",
+   "Organizational knowledge capture",
+   "Easy customization",
+   "Centralized management for organizations"
+  ]
+ },
+ {
+  "src": "35",
+  "arch": "image_full",
+  "eyebrow": "Skills",
+  "image": "image36.png",
+  "caption": "The Skills settings panel: a 'brand-guidelines' skill (Trigger: slash command + auto) applies official brand colors and typography to any artifact.",
+  "dark": true,
+  "note": "Full-bleed product screenshot of the Claude Skills customization UI showing the brand-guidelines skill."
+ },
+ {
+  "src": "36",
+  "arch": "image_text",
+  "eyebrow": "Skills",
+  "title": "Skills: Teaching Claude Some New Tricks",
+  "body": "But how do I make new skills?\n\nGreat news, Anthropic thought of that: you just ask!\n\nClaude has a skill-creator skill! (so meta)",
+  "image": "image36.png",
+  "image_side": "right"
+ },
+ {
+  "src": "37",
+  "arch": "numbered",
+  "eyebrow": "Giving Claude skills: brand guidelines",
+  "title": "Create a brand-guidelines skill for your actual brand.",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Ask Claude",
+    "body": "“Create me a brand guidelines skill that is based off of the real brand guidelines of my foundation”"
+   },
+   {
+    "num": "02",
+    "lead": "Answer its questions",
+    "body": ""
+   },
+   {
+    "num": "03",
+    "lead": "Try it out!",
+    "body": ""
+   }
+  ]
+ },
+ {
+  "src": "38",
+  "arch": "bullets",
+  "eyebrow": "Skills",
+  "title": "Skills Summary",
+  "bullets": [
+   "Useful for small, contained workflows that you and your organization would use a lot",
+   "Smaller than a project - you could imagine a project to write social media communications using your brand guidelines tool.",
+   "Called with either a “/” or by Claude’s choice."
+  ]
+ },
+ {
+  "src": "40",
+  "arch": "flow",
+  "eyebrow": "Trapped in the chat",
+  "title": "But what about…",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": ""
+   },
+   {
+    "label": "Actor",
+    "sub": ""
+   },
+   {
+    "label": "Input",
+    "sub": "Connectors connect to your data sources"
+   },
+   {
+    "label": "Steps",
+    "sub": "Skills provide extra abilities / consistency"
+   },
+   {
+    "label": "Success",
+    "sub": "Connectors connect to your data sources"
+   }
+  ],
+  "caption": "Teaching Claude to do something your way consistently? Skills close the gap on the node anatomy.",
+  "note": "Merged the TRAPPED IN THE CHAT node-anatomy build (slides 39–40) into one record using the fullest/last slide (40); slide 39 is an earlier partial reveal and was skipped."
+ },
+ {
+  "src": "41",
+  "arch": "comparison",
+  "eyebrow": "The pivot",
+  "title": "Any problem that can be solved by computing is arguably “solvable” by LLMs.",
+  "left": {
+   "label": "Prior to language models",
+   "body": "People had to “speak computer” to build software."
+  },
+  "right": {
+   "label": "Now",
+   "body": "Computers understand how people speak, and will build software as described."
+  }
+ },
+ {
+  "src": "42",
+  "arch": "numbered",
+  "eyebrow": "Final work block",
+  "title": "Final Work Block (90 min)",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Continue working on your prototype with your technologist",
+    "body": ""
+   },
+   {
+    "num": "02",
+    "lead": "Flag any technical issues or new challenges you’re facing",
+    "body": "it’s our last time in the group to talk about it!"
+   },
+   {
+    "num": "03",
+    "lead": "If you’re at a testing stage, develop your ‘practical ethics’ testing plan",
+    "body": ""
+   }
+  ],
+  "kicker": "We’ll meet again at 4:30"
+ },
+ {
+  "src": "43",
+  "arch": "statement",
+  "eyebrow": "IMPACTAI FOUNDRY · SESSION 4",
+  "title": "We Did It!",
+  "subtitle": "Bringing Your AI Into the World"
+ },
+ {
+  "src": "44",
+  "arch": "bars",
+  "eyebrow": "Learning Path",
+  "title": "Discover to Deliver",
+  "bars": [
+   {
+    "num": "01",
+    "name": "Discover",
+    "color": "navy"
+   },
+   {
+    "num": "02",
+    "name": "Define",
+    "color": "terra"
+   },
+   {
+    "num": "03",
+    "name": "Design",
+    "color": "spice"
+   },
+   {
+    "num": "04",
+    "name": "Refine",
+    "color": "gold"
+   },
+   {
+    "num": "05",
+    "name": "Deliver",
+    "color": "green"
+   }
+  ]
+ },
+ {
+  "src": "45",
+  "arch": "numbered",
+  "eyebrow": "What we're learning about AI",
+  "title": "What We're Learning About AI",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Building Fluency Takes Time"
+   },
+   {
+    "num": "02",
+    "lead": "You Learn Best By Doing"
+   },
+   {
+    "num": "03",
+    "lead": "The Fun Comes in Iterating"
+   }
+  ]
+ },
+ {
+  "src": "46",
+  "arch": "two_col",
+  "eyebrow": "Toolkit",
+  "title": "Your AI Tool Kit",
+  "ghost": "46",
+  "left": {
+   "label": "Claude Chat",
+   "bullets": [
+    "ChatGPT",
+    "Gemini",
+    "Copilot"
+   ]
+  },
+  "right": {
+   "label": "Claude Cowork",
+   "bullets": [
+    "OpenAI Browser Agent",
+    "Gemini in Chrome",
+    "Copilot in Edge"
+   ]
+  }
+ },
+ {
+  "src": "46b",
+  "arch": "statement",
+  "eyebrow": "Toolkit",
+  "title": "Claude Code",
+  "subtitle": "Codex · Gemini Code"
+ },
+ {
+  "src": "47",
+  "arch": "numbered",
+  "eyebrow": "Ethics Guidelines",
+  "title": "Ethics Guidelines",
+  "kicker": "…but don't let these get in the way of getting started",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Personally Identifiable Information",
+    "body": "Free AI tools aren't private - don't share information unless it's a secure platform."
+   },
+   {
+    "num": "02",
+    "lead": "Keep a Human in the Loop",
+    "body": "Until you fully understand how AI behaves, always review its outputs before relying on them."
+   },
+   {
+    "num": "03",
+    "lead": "Customize for Your Community",
+    "body": "Out-of-the-box AI models don't reflect every culture or experience - adapt them to truly serve your audience."
+   }
+  ]
+ },
+ {
+  "src": "48",
+  "arch": "numbered",
+  "eyebrow": "Prompting",
+  "title": "Prompting",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Give a Role and Goal",
+    "body": "\"You are a [add an expert, such as a \"social media expert\"] and your objective is to [add goal, such as \"create LinkedIn posts about events\"]\""
+   },
+   {
+    "num": "02",
+    "lead": "List the Steps and Context",
+    "body": "\"To complete these instructions, follow these steps: Step 1, Step 2, Step 3 (etc)\""
+   },
+   {
+    "num": "03",
+    "lead": "Describe the Final Product (Output)",
+    "body": "\"When you are done, write your final response\": a summary paragraph of the work done, and 3 bullet points, one per next step"
+   }
+  ]
+ },
+ {
+  "src": "49",
+  "arch": "numbered",
+  "eyebrow": "Solution types",
+  "title": "The 5 AI Solution Types",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Answer & Assist",
+    "body": "\"I get a lot of questions and can't keep up with answering them all.\""
+   },
+   {
+    "num": "02",
+    "lead": "Automate the Admin",
+    "body": "\"I keep doing the same tasks over and over and it's taking time away from more important work.\""
+   },
+   {
+    "num": "03",
+    "lead": "Create & Communicate",
+    "body": "\"I need to write or create something to share with others.\""
+   },
+   {
+    "num": "04",
+    "lead": "Sort & Scan",
+    "body": "\"I spend too much time reviewing information that follows a pattern.\""
+   },
+   {
+    "num": "05",
+    "lead": "Learn & Decide",
+    "body": "\"I want to learn something new or need better insight to make smarter choices.\""
+   }
+  ]
+ },
+ {
+  "src": "50",
+  "arch": "numbered",
+  "eyebrow": "AI Design Workflow",
+  "title": "AI Design Workflow",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Define the Problem (the friction)"
+   },
+   {
+    "num": "02",
+    "lead": "Describe the Current Workflow"
+   },
+   {
+    "num": "03",
+    "lead": "Clarify the Output"
+   },
+   {
+    "num": "04",
+    "lead": "Define Success"
+   },
+   {
+    "num": "05",
+    "lead": "Prototype, Test, and Iterate!"
+   }
+  ]
+ },
+ {
+  "src": "51",
+  "arch": "image_text",
+  "eyebrow": "Workflows",
+  "title": "We learned to make toast (aka workflows)",
+  "body": "A workflow is a chain of steps. Each box in the chain is a node.",
+  "image": "image72.png",
+  "image_side": "right"
+ },
+ {
+  "src": "52",
+  "arch": "flow",
+  "eyebrow": "Node Anatomy",
+  "title": "Zoom in on one step (node)",
+  "steps": [
+   {
+    "label": "Trigger",
+    "sub": "The signal to start the step"
+   },
+   {
+    "label": "Actor",
+    "sub": "The person or thing that completes the step"
+   },
+   {
+    "label": "Inputs",
+    "sub": "Info or data needed to complete the step (this is optional!)"
+   },
+   {
+    "label": "Action",
+    "sub": "The actions the actor does to complete the step"
+   },
+   {
+    "label": "Success",
+    "sub": "The result of the step and how you know it's successful"
+   }
+  ],
+  "caption": "For any single step in a workflow, you can break it down into:"
+ },
+ {
+  "src": "53",
+  "arch": "bullets",
+  "eyebrow": "The Four Questions",
+  "title": "The Four Questions",
+  "intro": "Answer these questions before you deploy and you're ahead of 99% of social sector tech.",
+  "bullets": [
+   "What does success look like - for everyone?",
+   "How will we know if it's failing?",
+   "Who can raise an issue, and what happens?",
+   "Who can change it or turn it off?"
+  ]
+ },
+ {
+  "src": "54",
+  "arch": "bullets",
+  "eyebrow": "Our Alumni",
+  "title": "Our Alumni",
+  "bullets": [
+   "Build Policy — Built AI Policy for a 600 person organization",
+   "Create Apps — Created an app to support nonprofits nationwide",
+   "Lead Learning — Developing an AI curriculum for all of New York State's Entrepreneurs Assistance Centers",
+   "Get Funded — Received $500,000 in follow-on funding for AI tools",
+   "Get Published — Published in The AI Journal on training workforce for an AI era",
+   "Scale — Use AI to scale programming nationally"
+  ]
+ },
+ {
+  "src": "55",
+  "arch": "statement",
+  "eyebrow": "Post-Survey",
+  "title": "Take 5 minutes and reflect on today.",
+  "subtitle": "TODO: set real post-survey link (ImpactAI Foundry)"
+ },
+ {
+  "src": "56",
+  "arch": "numbered",
+  "eyebrow": "What's Next",
+  "title": "What's Next",
+  "rows": [
+   {
+    "num": "01",
+    "lead": "Demo Day!",
+    "body": "See you at St Cajetan's. Tuesday, June 2nd: 4:00-6:30. 101 Lawrence Way, St Cajetan's."
+   },
+   {
+    "num": "02",
+    "lead": "Between now and then",
+    "body": "Share your final prototypes in Slack! They can be screenshots, code, or whatever you can show."
+   },
+   {
+    "num": "03",
+    "lead": "Questions?",
+    "body": "Chat on Slack or reach out to the ImpactAI Foundry team. TODO: set real contact email."
+   }
+  ]
+ },
+ {
+  "src": "57",
+  "arch": "image_grid",
+  "eyebrow": "IMPACTAI FOUNDRY · SESSION 4",
+  "title": "Follow along!",
+  "images": [
+   "image61.png",
+   "image70.png",
+   "image62.png"
+  ],
+  "caption": "Substack   ·   Case Studies   ·   LinkedIn",
+  "note": "Three QR codes (Substack, Case Studies, LinkedIn) over a decorative background; dropped the '‹#›' slide-number chrome and the full-bleed background tile (image73.png). QR images point to ImpactAI Foundry properties. TODO: set real ImpactAI Foundry QR codes / links for Substack, Case Studies, and LinkedIn."
+ }
+]

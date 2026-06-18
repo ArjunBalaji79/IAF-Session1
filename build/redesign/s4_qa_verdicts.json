@@ -1,0 +1,397 @@
+[
+ {
+  "n": 1,
+  "severity": "major",
+  "fidelity_ok": true,
+  "overflow": true,
+  "legibility": "good",
+  "issues": [
+   "Title 'Bringing Your AI Into the World' wraps to a second line and the word 'World' collides with the gold accent rule that sits behind it.",
+   "The subtitle line sits too close to / overlaps the descender area of 'World', creating a visual collision under the second title line."
+  ],
+  "dropped_text": [],
+  "fix": "Reduce the cover title font size (or widen the title text box) so 'Bringing Your AI Into the World' fits on one line, OR remove/reposition the gold accent rule and push the subtitle down so it clears the wrapped title."
+ },
+ {
+  "n": 2,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 3,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 4,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 5,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 6,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 7,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 8,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 9,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 10,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 11,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 14,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 18,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 19,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 21,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "The caption ends with an internal authoring note ('Merged from the Getting Data Into Claude build series (slides 20-21).') that reads as production scaffolding rather than audience-facing copy. The GitHub Integration screenshot body text is on the smaller side but acceptable."
+  ],
+  "fix": "Trim the caption to the audience-facing sentence only: 'Connectors let Claude read and write to the tools you already use - found under Customize Claude.' Move the merge note into the slide's speaker notes."
+ },
+ {
+  "n": 23,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 24,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "cramped",
+  "dropped_text": [],
+  "issues": [
+   "The tool-permissions screenshot is dense with many small rows; on a projector the per-tool labels (Search messages, Read channel messages, etc.) are tiny and effectively unreadable. The slide's own title/body fully carry the teaching point, so this is illustrative-only, but the image adds little at this scale."
+  ],
+  "fix": "Crop the screenshot to just the top permission rows (showing 'Always allow / Ask each time / Needs approval' states) and scale up so the permission-mode labels are legible, rather than showing the full scrollable list."
+ },
+ {
+  "n": 25,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Doubled-word typo in row 02 lead: 'Ask Claude for a summary of the the cohort conversation' ('the the')."
+  ],
+  "fix": "Change row 02 lead to 'Ask Claude for a summary of the cohort conversation' (remove the duplicated 'the')."
+ },
+ {
+  "n": 26,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Doubled-word typo in caption: 'Claude reads the the cohort Slack channel' ('the the')."
+  ],
+  "fix": "Change the caption to 'Claude reads the cohort Slack channel and returns a summary of recent activity...' (remove the duplicated 'the')."
+ },
+ {
+  "n": 28,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 29,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "cramped",
+  "dropped_text": [],
+  "image_issue": "The Slack/DM draft screenshot is a long, dense block of tiny grey text (a multi-paragraph email-style draft) that is completely unreadable at projection size. It is illustrative context only and the teaching body fully carries the point, but at this scale it just reads as a grey wall. Note the screenshot still shows the specific name 'Jenni Warren' even though the body copy was rebranded to the generic 'a teammate' (not a banned term, just an inconsistency between image and body).",
+  "fix": "Replace or crop the screenshot to show only the top portion (the 'send to @teammate' draft header + Send button) at a larger scale so it's legible, instead of the full dense draft body; optionally swap the image for one whose recipient matches the body's generic 'a teammate' framing."
+ },
+ {
+  "n": 31,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": []
+ },
+ {
+  "n": 32,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": []
+ },
+ {
+  "n": 33,
+  "severity": "minor",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": [
+   "The fourth flow box ('ImpactAI Foundry branding skill') uses dark navy text on a gold/mustard fill, while the other three boxes use light/cream text on darker fills. Still readable but visually inconsistent with the rest of the row."
+  ],
+  "fix": "Adjust the gold step-box style so its label text uses the light/cream foreground (matching the other three boxes), or assign this step a darker fill color for consistent contrast."
+ },
+ {
+  "n": 34,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": []
+ },
+ {
+  "n": 35,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "",
+  "issues": []
+ },
+ {
+  "n": 36,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "image_issue": "Screenshot (image36.png) is rendered fairly small on the right and its internal UI text is tiny/illustrative-only, but it is purely supporting context and the body text carries the message; acceptable.",
+  "issues": []
+ },
+ {
+  "n": 37,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "issues": []
+ },
+ {
+  "n": 38,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 40,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": [],
+  "issues": [
+   "Success node sub-text 'Connectors connect to your data sources' duplicates the Input node sub — faithfully reproduces a likely source error, not a rendering defect"
+  ]
+ },
+ {
+  "n": 41,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 42,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 43,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 44,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 45,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 46,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 46,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 47,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 48,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 49,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 50,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 51,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good"
+ },
+ {
+  "n": 52,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 53,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 54,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 55,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 56,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ },
+ {
+  "n": 57,
+  "severity": "ok",
+  "fidelity_ok": true,
+  "overflow": false,
+  "legibility": "good",
+  "dropped_text": []
+ }
+]
